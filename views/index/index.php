@@ -22,12 +22,12 @@
                     <th><?php echo $file['size'] . ' KB'; ?></th>
                     <th><?php echo $file['uploaded']; ?></th>
                     <th>
-                        <a href="#" class="remove-file" data-id="<?php echo $file[0]; ?>"  data-toggle="modal" data-target="#edit">
+                        <a href="#" class="remove-file" data-id="<?php echo $file[0]; ?>"  data-toggle="modal" data-target="#remove">
                             <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
                         </a>
                     </th>
                     <th>
-                        <a href="#" class="edit-file" data-id="<?php echo $file[0]; ?>" data-toggle="modal" data-target="#delete">
+                        <a href="#" class="edit-file" data-id="<?php echo $file[0]; ?>" data-toggle="modal" data-target="#edit">
                             <span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span>
                         </a>
                     </th>

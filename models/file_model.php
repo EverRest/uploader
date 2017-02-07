@@ -17,10 +17,10 @@ class File_Model extends Model
             :type, 
             :size)";
         $sth = $this->db->prepare($sql);
-        $sth->bindParam(':file', $name, PDO::PARAM_STR);
-        $sth->bindParam(':extension', $extension, PDO::PARAM_STR);
-        $sth->bindParam(':type', $type, PDO::PARAM_STR);
-        $sth->bindParam(':size', $size, PDO::PARAM_STR);
+        $sth->bindParam(':file', $name);
+        $sth->bindParam(':extension', $extension);
+        $sth->bindParam(':type', $type);
+        $sth->bindParam(':size', $size);
         $sth->execute();
     }
 
