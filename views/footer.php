@@ -68,7 +68,7 @@
     <!--            </div>-->
                 <div class="modal-footer">
                     <button type="button" id="delete-btn" class="btn btn-lg btn-success" data-dismiss="modal">YES</button>
-                    <button type="button" class="btn btn-lg btn-danger" data-dismiss="modal">NO</button>
+                    <button type="button" id="delete-close" class="btn btn-lg btn-danger" data-dismiss="modal">NO</button>
                 </div>
             </div>
 

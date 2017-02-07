@@ -20,13 +20,13 @@ class File extends Controller
             if(move_uploaded_file($tmp_name, $location))
             {
                 $this->model->insertFile($name, $size, $type, $extension);
-                $redirect = URL . 'index/';
+                $redirect = URL;
                 header('Location: ' . $redirect);
             }
         }
     }
 
-    public function delete($id)
+    public function delete()
     {
         $this->model->removeFile($id);
     }
