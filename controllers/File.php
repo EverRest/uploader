@@ -14,7 +14,8 @@ class File extends Controller
         $extension = strtolower(substr($name, strpos($name, '.') + 1));
         $tmp_name = $_FILES['file']['tmp_name'];
         $error = $_FILES['file']['error'];
-        if (isset($name) AND !empty($name))
+
+        if (isset($name) AND !empty($name) AND $error == 0)
         {
             $location =  'uploads/' . $name;
             if(move_uploaded_file($tmp_name, $location))
@@ -28,12 +29,23 @@ class File extends Controller
 
     public function delete()
     {
-        $this->model->removeFile($id);
+        if(isset($_POST['id']) AND !empty($_POST['id'])) {
+            $id = $_POST['id'];
+            $this->model->removeFile($id);
+        }
     }
 
-    public function edit()
+    public function save()
     {
-        $this->model->updateFile();
+        $text = $_POST['text'];
+        $file = 'uploads/' . $_POST['name'];
+        $this->model->updateFile($file, $text);
+    }
+
+    public function read()
+    {
+        $file =  'uploads/' . $_POST['name'];
+        $this->model->readFile($file);
     }
 
 }

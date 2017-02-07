@@ -1,3 +1,3 @@
 <?php
-define('URL', 'http://uploader.ua/');
+define('URL', 'http://uploader/');
 ?>

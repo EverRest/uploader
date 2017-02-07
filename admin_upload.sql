@@ -36,14 +36,6 @@ CREATE TABLE `files` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `files`
---
-
-INSERT INTO `files` (`id`, `file`, `extension`, `type`, `size`, `uploaded`) VALUES
-(1, 'dump.sql', 'sql', 'application/octet-stream', '3640', '2017-02-07 00:48:38'),
-(2, 'footer.php', 'php', 'application/octet-stream', '365', '2017-02-07 00:52:30');
-
---
 -- Indexes for dumped tables
 --
 
@@ -61,7 +53,8 @@ ALTER TABLE `files`
 -- AUTO_INCREMENT for table `files`
 --
 ALTER TABLE `files`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*admin: admin_upload,password: 9614907gmg*/

@@ -6,7 +6,7 @@ class Bootstrap {
         $url = explode('/', $url);
 
         if(empty($url[0])) {
-            require 'controllers/index.php';
+            require 'controllers/Index.php';
             $controller = new Index();
             $controller->index();
             return false;
@@ -17,7 +17,7 @@ class Bootstrap {
         if(file_exists($file)) {
             require $file;
         } else {
-            require 'controllers/error.php';
+            require 'controllers/Error.php';
             $controller = new Error();
             return false;
         }

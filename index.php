@@ -1,12 +1,12 @@
 <?php
     require 'config/paths.php';
 
-    require 'libs/Bootstrap.php';
-    require 'libs/Controller.php';
-    require 'libs/Model.php';
-    require 'libs/View.php';
-    require 'libs/Database.php';
-    require 'libs/Session.php';
+    require 'libs/bootstrap.php';
+    require 'libs/controller.php';
+    require 'libs/model.php';
+    require 'libs/view.php';
+    require 'libs/database.php';
+    require 'libs/session.php';
 
     $app = new Bootstrap();
     Session::init();

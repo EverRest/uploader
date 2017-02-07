@@ -9,6 +9,27 @@
 
 
 <!-- Modal Upload Form -->
+<div id="store" class="modal fade" role="dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title file-name"></h4>
+            </div>
+            <div class="modal-body">
+                <p class="file-content">
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-lg btn-info" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+
+<!-- Modal Upload Form -->
 <div id="upload" class="modal fade" role="dialog">
     <form id="upload-form" enctype="multipart/form-data" method="POST" action="file/add" class="modal-dialog">
 
@@ -19,7 +40,7 @@
                 <h4 class="modal-title">Upload your file</h4>
             </div>
             <div class="modal-body">
-                <input type="file" id="file" name="file" class="btn btn-lg" />
+                <input type="file" id="file" name="file" class="btn btn-lg" required="required" />
             </div>
             <div class="modal-footer">
                 <input id="add-sbmt" type="submit" class="btn btn-lg btn-success" value="Submit" />
@@ -42,10 +63,11 @@
                 <h4 class="modal-title">Edit this file</h4>
             </div>
             <div class="modal-body">
-                <p>Some text in the modal.</p>
+                <p id="content"></p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" id="edit-btn" class="btn btn-lg btn-info hidden">Save</button>
+                <button type="button" class="btn btn-lg btn-warning" data-dismiss="modal">Close</button>
             </div>
         </div>
 

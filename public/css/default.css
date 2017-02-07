@@ -29,3 +29,12 @@
     background-color: #f5f5f5;
     border-top: 1px solid #d8d8d8;
 }
+
+.file-img {
+    max-width: 570px;
+    height: auto;
+}
+
+.store-file span {
+    color: blue;
+}

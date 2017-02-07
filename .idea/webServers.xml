@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f108c0cf-1932-4186-bb54-7a48a23685dc" name="upload" url="http://uploader.adr.com.ua/">
+        <fileTransfer host="http://uploader.adr.com.ua" port="21" password="df93df9cdf9bdf9edf93df9adf9ddfcddfc7dfcd" username="">
+          <advancedOptions>
+            <advancedOptions compatibilityMode="true" dataProtectionLevel="Private" passiveMode="true" showHiddenFiles="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
