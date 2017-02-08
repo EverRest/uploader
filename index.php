@@ -1,5 +1,6 @@
 <?php
     require 'config/paths.php';
+    require 'config/db_param.php';
 
     require 'libs/Bootstrap.php';
     require 'libs/Controller.php';

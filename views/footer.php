@@ -31,7 +31,7 @@
 
 <!-- Modal Upload Form -->
 <div id="upload" class="modal fade" role="dialog">
-    <form id="upload-form" enctype="multipart/form-data" method="POST" action="file/add" class="modal-dialog">
+    <form id="upload-form" enctype="multipart/form-data" method="POST" action="<?php echo URL?>file/add" class="modal-dialog">
 
         <!-- Modal content-->
         <div class="modal-content">
