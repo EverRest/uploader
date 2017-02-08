@@ -11,6 +11,7 @@ $(document).ready(function (){
         data.name = $(this).parent().parent().find('.file-name').text();
 
         if (data.ext == 'jpg' || data.ext == 'png' || data.ext == 'gif' || data.ext == 'jpeg') {
+            $('#store').find('.file-name').empty().text(data.name);
             var img_src =  'uploads/' + data.name;
             $('#store').find('.file-content').append("<img class='file-img' src='" + getCookie('base_url') + img_src + "' alt=''/>");
         } else {
