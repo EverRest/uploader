@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d012360b-18be-49b7-a7fb-339a6520e183" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/149637.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/werrtwer.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Javascript source code.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/Project access.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/custom.js" afterPath="$PROJECT_DIR$/public/js/custom.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/uploads/123.txt" afterPath="$PROJECT_DIR$/examples/123.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/uploads/149265.jpg" afterPath="$PROJECT_DIR$/examples/149265.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/uploads/fhdkfhdskjfhdk.jpg" afterPath="$PROJECT_DIR$/examples/fhdkfhdskjfhdk.jpg" />
     </list>
     <ignored path="uploader.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,8 +63,8 @@
       <file leaf-file-name="custom.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/custom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+            <state relative-caret-position="425">
+              <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -288,7 +294,7 @@
       <option name="presentableId" value="Default" />
       <updated>1486460255162</updated>
       <workItem from="1486460257663" duration="24148000" />
-      <workItem from="1486544134713" duration="5479000" />
+      <workItem from="1486544134713" duration="5626000" />
     </task>
     <task id="LOCAL-00001" summary="production debug v.0.2 commit">
       <created>1486487194966</created>
@@ -318,11 +324,25 @@
       <option name="project" value="LOCAL" />
       <updated>1486549894617</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added title for the pictures">
+      <created>1486550030813</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1486550030813</updated>
+    </task>
+    <task id="LOCAL-00006" summary="finish commit">
+      <created>1486550107166</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1486550107166</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29627000" />
+    <option name="totallyTimeSpent" value="29774000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="1176" extended-state="0" />
@@ -369,7 +389,9 @@
     <MESSAGE value="added lost commit" />
     <MESSAGE value="added Xss class to libs" />
     <MESSAGE value="added db_params to config" />
-    <option name="LAST_COMMIT_MESSAGE" value="added db_params to config" />
+    <MESSAGE value="added title for the pictures" />
+    <MESSAGE value="finish commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -650,8 +672,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+        <state relative-caret-position="425">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
           <folding />
         </state>
       </provider>
