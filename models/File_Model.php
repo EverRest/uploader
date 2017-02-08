@@ -24,12 +24,16 @@ class File_Model extends Model
         $sth->execute();
     }
 
-    public function removeFile($id)
+    public function removeFile($id , $name)
     {
         $sql = "DELETE FROM files WHERE id =  :id";
         $sth = $this->db->prepare($sql);
         $sth->bindParam(':id', $id, PDO::PARAM_INT);
         $sth->execute();
+
+        if (file_exists($name)) {
+            unlink($name);
+        }
     }
     
     public function getAll()

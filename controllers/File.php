@@ -21,23 +21,24 @@ class File extends Controller
             if(move_uploaded_file($tmp_name, $location))
             {
                 $this->model->insertFile($name, $size, $type, $extension);
-                $redirect = URL;
-                header('Location: ' . $redirect);
             }
         }
+        header('location: ' . URL);
     }
 
     public function delete()
     {
         if(isset($_POST['id']) AND !empty($_POST['id'])) {
             $id = $_POST['id'];
-            $this->model->removeFile($id);
+            $name = $_POST['name'];
+            $file = 'uploads/' . $_POST['name'];
+            $this->model->removeFile($id, $file);
         }
     }
 
     public function save()
     {
-        $text = $_POST['text'];
+        $text = Xss::clean($_POST['text']);
         $file = 'uploads/' . $_POST['name'];
         $this->model->updateFile($file, $text);
     }

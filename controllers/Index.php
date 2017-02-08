@@ -1,5 +1,5 @@
 <?php
-require_once '/models/File_Model.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/models/File_Model.php';
 
 class Index extends Controller {
     public function __construct() {

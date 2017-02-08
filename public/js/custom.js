@@ -12,7 +12,7 @@ $(document).ready(function (){
 
         if (data.ext == 'jpg' || data.ext == 'png' || data.ext == 'gif' || data.ext == 'jpeg') {
             var img_src =  'uploads/' + data.name;
-            $('#store').find('.file-content').append("<img class='file-img' src='" + img_src + "' alt=''/>");
+            $('#store').find('.file-content').append("<img class='file-img' src='" + getCookie('base_url') + img_src + "' alt=''/>");
         } else {
             $.ajax({
                 url: 'file/read',
@@ -34,6 +34,7 @@ $(document).ready(function (){
         var data = {};
 
         data.id= $(this).data('id');
+        data.name = $(this).data('name');
 
         $('#delete-btn').on('click', function () {
             $.ajax({

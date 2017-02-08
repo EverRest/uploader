@@ -38,3 +38,7 @@
 .store-file span {
     color: blue;
 }
+
+.file-content {
+    text-align: center;
+}

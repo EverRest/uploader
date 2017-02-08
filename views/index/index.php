@@ -30,7 +30,7 @@
                         </a>
                     </th>
                     <th>
-                        <a href="#" class="remove-file" data-id="<?php echo $file[0]; ?>" data-toggle="modal" data-target="#delete">
+                        <a href="#" class="remove-file" data-name="<?php echo $file['file']; ?>" data-id="<?php echo $file[0]; ?>" data-toggle="modal" data-target="#delete">
                             <span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span>
                         </a>
                     </th>
